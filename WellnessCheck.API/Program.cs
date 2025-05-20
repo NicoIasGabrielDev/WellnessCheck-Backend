@@ -68,6 +68,13 @@ builder.Services
 
 var app = builder.Build();
 
+// Add Migration to enable seed
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+}
+
 //Configure Swagger
 app.UseSwagger();
 app.UseSwaggerUI();
