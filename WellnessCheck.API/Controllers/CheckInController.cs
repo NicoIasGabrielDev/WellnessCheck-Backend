@@ -67,6 +67,25 @@ public class CheckInController : ControllerBase
         return Ok(checkIns);
     }
 
+
+    [HttpGet("/users/{userId}/checkins")]
+    [Authorize]
+    public IActionResult GetCheckInsByUser(Guid userId)
+    {
+        var isAdmin = User.IsInRole("Admin");
+        var currentUserId = User.FindFirst("UserId")?.Value;
+    
+        if (!isAdmin && currentUserId != userId.ToString())
+            return Forbid();
+    
+        var checkIns = _context.CheckIns
+            .Where(c => c.UserId == userId)
+            .OrderBy(c => c.CreatedAt)
+            .ToList();
+    
+        return Ok(checkIns);
+    }
+    
     [HttpGet("search")]
     [Authorize]
     public async Task<IActionResult> SearchCheckIns([FromQuery] CheckInFilterDto filter)
