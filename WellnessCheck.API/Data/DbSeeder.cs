@@ -1,4 +1,4 @@
-﻿using WellnessCheck.API.Entities;
+using WellnessCheck.API.Entities;
 using WellnessCheck.API.Enums;
 
 namespace WellnessCheck.API.Data
@@ -43,13 +43,62 @@ namespace WellnessCheck.API.Data
 
             var checkIns = new List<CheckIn>
             {
-                new() { Id = Guid.NewGuid(), UserId = joao.Id, Mood = 2, Productivity = ProductivityLevel.Low, Notes = "Tired today", CreatedAt = DateTime.UtcNow.AddDays(-2) },
-                new() { Id = Guid.NewGuid(), UserId = joao.Id, Mood = 1, Productivity = ProductivityLevel.VeryLow, CreatedAt = DateTime.UtcNow.AddDays(-1) },
-                new() { Id = Guid.NewGuid(), UserId = joao.Id, Mood = 4, Productivity = ProductivityLevel.High },
+                // João - 3 check-ins
+                new()
+                {
+                    Id = Guid.NewGuid(),
+                    UserId = joao.Id,
+                    Mood = 2,
+                    Productivity = ProductivityLevel.Low,
+                    Notes = "Feeling tired.",
+                    CreatedAt = DateTime.UtcNow.Date.AddDays(-2)
+                },
+                new()
+                {
+                    Id = Guid.NewGuid(),
+                    UserId = joao.Id,
+                    Mood = 1,
+                    Productivity = ProductivityLevel.VeryLow,
+                    Notes = "Worst day so far.",
+                    CreatedAt = DateTime.UtcNow.Date.AddDays(-1)
+                },
+                new()
+                {
+                    Id = Guid.NewGuid(),
+                    UserId = joao.Id,
+                    Mood = 4,
+                    Productivity = ProductivityLevel.High,
+                    Notes = "Much better today.",
+                    CreatedAt = DateTime.UtcNow.Date
+                },
 
-                new() { Id = Guid.NewGuid(), UserId = maria.Id, Mood = 3, Productivity = ProductivityLevel.Medium },
-                new() { Id = Guid.NewGuid(), UserId = maria.Id, Mood = 5, Productivity = ProductivityLevel.VeryHigh, Notes = "Great day!" },
-                new() { Id = Guid.NewGuid(), UserId = maria.Id, Mood = 2, Productivity = ProductivityLevel.Low, CreatedAt = DateTime.UtcNow.AddDays(-1) }
+                // Maria - 3 check-ins
+                new()
+                {
+                    Id = Guid.NewGuid(),
+                    UserId = maria.Id,
+                    Mood = 3,
+                    Productivity = ProductivityLevel.Medium,
+                    CreatedAt = DateTime.UtcNow.Date.AddDays(-2)
+                },
+                new()
+                {
+                    Id = Guid.NewGuid(),
+                    UserId = maria.Id,
+                    Mood = 5,
+                    Productivity = ProductivityLevel.VeryHigh,
+                    Notes = "Great day!",
+                    CreatedAt = DateTime.UtcNow.Date.AddDays(-1)
+                },
+                new()
+                {
+                    Id = Guid.NewGuid(),
+                    UserId = maria.Id,
+                    Mood = 2,
+                    Productivity = ProductivityLevel.Low,
+                    Notes = "Stressful.",
+                    CreatedAt = DateTime.UtcNow.Date
+                }
             };
 
             context.CheckIns.AddRange(checkIns);
