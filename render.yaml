@@ -7,6 +7,6 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: ConnectionStrings__DefaultConnection
-        value: Host=localhost;Port=5432;Database=WellnessCheckDb;Username=postgres;Password=CCnick24
+        value: postgresql://wellnesscheck-db_owner:npg_nh8DWg5tIApx@ep-quiet-frog-a5meqvsk-pooler.us-east-2.aws.neon.tech/wellnesscheck-db?sslmode=require
       - key: Jwt__Key
         value: welnesscheck-api-nicolas242424@@@@@@
