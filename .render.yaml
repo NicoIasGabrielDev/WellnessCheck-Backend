@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: wellnesscheck-backend
+    env: dotnet
+    plan: free
+    rootDir: WellnessCheck.API
+    buildCommand: dotnet build
+    startCommand: dotnet WellnessCheck.API.dll
+    envVars:
+      - key: ConnectionStrings__DefaultConnection
+        value: Host=localhost;Port=5432;Database=WellnessCheckDb;Username=postgres;Password=CCnick24
+      - key: Jwt__Key
+        value: welnesscheck-api-nicolas242424@@@@@@
