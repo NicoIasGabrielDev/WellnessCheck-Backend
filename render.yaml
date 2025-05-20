@@ -1,11 +1,10 @@
 services:
   - type: web
     name: wellnesscheck-backend
-    runtime: dotnet
+    runtime: docker
     plan: free
     rootDir: WellnessCheck.API
-    buildCommand: dotnet build
-    startCommand: dotnet WellnessCheck.API.dll
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: ConnectionStrings__DefaultConnection
         value: Host=localhost;Port=5432;Database=WellnessCheckDb;Username=postgres;Password=CCnick24
