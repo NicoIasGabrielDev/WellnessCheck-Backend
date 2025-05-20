@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ljTk89u1IOouYdl6+uQsig0/Qnop9wFtksmgoh4aHec=",
+  "Source": "WellnessCheck.API",
+  "BasePath": "_content/WellnessCheck.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
