@@ -84,6 +84,9 @@ using (var scope = app.Services.CreateScope())
     db.Database.Migrate();
 }
 
+//Configure Cors Policy
+app.UseCors("AllowAll");
+
 //Configure Swagger
 app.UseSwagger();
 app.UseSwaggerUI();
