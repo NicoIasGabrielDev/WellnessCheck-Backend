@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\krico\\Desktop\\portifolio\\WellnessCheck\\WellnessCheck.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B11008B-F9E7-4DD2-9C98-31C63DFD9647}|WellnessCheck.API\\WellnessCheck.API.csproj|c:\\users\\krico\\desktop\\portifolio\\wellnesscheck\\wellnesscheck.api\\wellnesscheck.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{3B11008B-F9E7-4DD2-9C98-31C63DFD9647}|WellnessCheck.API\\WellnessCheck.API.csproj|solutionrelative:wellnesscheck.api\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{3B11008B-F9E7-4DD2-9C98-31C63DFD9647}|WellnessCheck.API\\WellnessCheck.API.csproj|c:\\users\\krico\\desktop\\portifolio\\wellnesscheck\\wellnesscheck.api\\wellnesscheck.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3B11008B-F9E7-4DD2-9C98-31C63DFD9647}|WellnessCheck.API\\WellnessCheck.API.csproj|solutionrelative:wellnesscheck.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B11008B-F9E7-4DD2-9C98-31C63DFD9647}|WellnessCheck.API\\WellnessCheck.API.csproj|c:\\users\\krico\\desktop\\portifolio\\wellnesscheck\\wellnesscheck.api\\wellnesscheck.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B11008B-F9E7-4DD2-9C98-31C63DFD9647}|WellnessCheck.API\\WellnessCheck.API.csproj|solutionrelative:wellnesscheck.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\krico\\Desktop\\portifolio\\WellnessCheck\\WellnessCheck.API\\WellnessCheck.API\\.gitignore",
-              "RelativeDocumentMoniker": "WellnessCheck.API\\.gitignore",
-              "ToolTip": "C:\\Users\\krico\\Desktop\\portifolio\\WellnessCheck\\WellnessCheck.API\\WellnessCheck.API\\.gitignore",
-              "RelativeToolTip": "WellnessCheck.API\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-20T20:31:26.724Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\krico\\Desktop\\portifolio\\WellnessCheck\\WellnessCheck.API\\WellnessCheck.API\\appsettings.json",
+              "RelativeDocumentMoniker": "WellnessCheck.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\krico\\Desktop\\portifolio\\WellnessCheck\\WellnessCheck.API\\WellnessCheck.API\\appsettings.json",
+              "RelativeToolTip": "WellnessCheck.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T20:47:01.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\krico\\Desktop\\portifolio\\WellnessCheck\\WellnessCheck.API\\WellnessCheck.API\\Program.cs",
+              "RelativeDocumentMoniker": "WellnessCheck.API\\Program.cs",
+              "ToolTip": "C:\\Users\\krico\\Desktop\\portifolio\\WellnessCheck\\WellnessCheck.API\\WellnessCheck.API\\Program.cs",
+              "RelativeToolTip": "WellnessCheck.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T20:47:00.317Z",
               "EditorCaption": ""
             }
           ]

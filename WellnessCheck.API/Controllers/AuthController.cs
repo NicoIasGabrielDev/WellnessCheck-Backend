@@ -47,7 +47,10 @@ namespace WellnessCheck.API.Controllers
 
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
-            return Ok(new { token = jwt });
+            return Ok(new { 
+                token = jwt,     
+                user = new{user.Id,user.Name,user.Email,user.Role} 
+            });
         }
     }
 }
