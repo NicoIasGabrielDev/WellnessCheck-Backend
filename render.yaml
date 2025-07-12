@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: wellnesscheck-backend
+    runtime: docker
+    plan: free
+    rootDir: WellnessCheck.API
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ConnectionStrings__DefaultConnection
+        value: Host=ep-quiet-frog-a5meqvsk-pooler.us-east-2.aws.neon.tech;Database=wellnesscheck-db;Username=wellnesscheck-db_owner;Password=npg_nh8DWg5tIApx
+      - key: Jwt__Key
+        value: welnesscheck-api-nicolas242424@@@@@@
