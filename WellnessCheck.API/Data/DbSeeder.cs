@@ -44,7 +44,7 @@ namespace WellnessCheck.API.Data
                 Name = "Stella Lima",
                 Email = "stella@empresa.com",
                 Password = "123456",
-                Role = Role.yee
+                Role = Role.Employee
             };
 
             context.Users.AddRange(admin, joao, maria);
