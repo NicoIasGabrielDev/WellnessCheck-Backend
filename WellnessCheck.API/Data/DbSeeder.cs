@@ -21,6 +21,14 @@ namespace WellnessCheck.API.Data
                 Role = Role.Admin
             };
 
+            var employee = new User
+            {
+                Id = Guid.NewGuid(),
+                Name = "Employee",
+                Email = "employee@wellness.com",
+                Password = "employee123",
+                Role = Role.Employee
+            };
             var joao = new User
             {
                 Id = Guid.NewGuid(),
@@ -36,7 +44,7 @@ namespace WellnessCheck.API.Data
                 Name = "Stella Lima",
                 Email = "stella@empresa.com",
                 Password = "123456",
-                Role = Role.Employee
+                Role = Role.yee
             };
 
             context.Users.AddRange(admin, joao, maria);
