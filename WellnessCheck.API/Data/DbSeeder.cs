@@ -47,7 +47,7 @@ namespace WellnessCheck.API.Data
                 Role = Role.Employee
             };
 
-            context.Users.AddRange(admin, joao, maria);
+            context.Users.AddRange(admin,employee, joao, maria);
 
             var checkIns = new List<CheckIn>
             {
